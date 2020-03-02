@@ -24,8 +24,8 @@ sap.ui.define([
 		},
 
 		onAddPurchaseOrder: function () {
-
-			debugger;
+ 
+			debugger;   
 
 			var oModel = this._oView.getModel(),
 				sPath = "/PurchaseOrderSet",

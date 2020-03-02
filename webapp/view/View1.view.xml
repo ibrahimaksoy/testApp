@@ -17,7 +17,7 @@
 							</HBox>
 							<HBox alignItems="Center" class="sapUiSmallMargin">
 								<Button text="Ekle" press="onAddPurchaseOrder" width="200px"></Button>
-							</HBox>
+							</HBox> 
 						</items>
 					</VBox>
 					<Table id="table0" items="{/PurchaseOrderSet}" noDataText="Veri bulunamadı!">
