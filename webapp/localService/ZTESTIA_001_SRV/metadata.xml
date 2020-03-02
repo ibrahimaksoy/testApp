@@ -1,0 +1,28 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZTESTIA_001_SRV" xml:lang="tr" sap:schema-version="1">
+			<EntityType Name="flight" sap:content-version="1">
+				<Key><PropertyRef Name="Carrid"/></Key><Property Name="Carrid" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Havayolu şirketi" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Connid" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Uçuş numarası" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Fldate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:label="Uçuş trh." sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="flightAdd" sap:content-version="1">
+				<Key><PropertyRef Name="Carrid"/></Key><Property Name="Carrid" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Havayolu şirketi" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Connid" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Uçuş numarası" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Fldate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:label="Tarih" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="PurchaseOrder" sap:content-version="1">
+				<Key><PropertyRef Name="Ponumber"/></Key><Property Name="Ponumber" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Satınalma blg" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Lifnr" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Satıcı" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Ernam" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Yaratan" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Waers" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="Para birimi" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false" sap:semantics="currency-code"/><Property Name="Bukrs" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Şirket kodu" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityContainer Name="ZTESTIA_001_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="flightSet" EntityType="ZTESTIA_001_SRV.flight" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="flightAddSet" EntityType="ZTESTIA_001_SRV.flightAdd" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="PurchaseOrderSet" EntityType="ZTESTIA_001_SRV.PurchaseOrder" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="http://172.0.0.91:8002/sap/opu/odata/sap/ZTESTIA_001_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version"
+				href="http://172.0.0.91:8002/sap/opu/odata/sap/ZTESTIA_001_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
